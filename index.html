@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Wilderness Racers: Summit Showdown - Pin-Up Eğlencesi">
+    <meta name="description"
+          content="Wilderness Racers: Summit Showdown ile orman yarışlarının keyfini çıkarın. Pin-up tarzındaki karakterler ve zorlu parkurlar sizi bekliyor!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Wilderness Racers: Summit Showdown - Pin-Up Eğlencesi</title>
+    <style>
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .wilderness_racers_hero {
+        background-image: url('img/0.jpg'); /* Update with your background image */
+        background-size: cover;
+        text-align: center;
+        padding: 100px 0;
+        color: white;
+        position: relative;
+      }
+
+      .wilderness_racers_menu {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 0;
+      }
+
+      .wilderness_racers_menu ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .wilderness_racers_menu li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      .wilderness_racers_menu a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .wilderness_racers_hero h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
+      .wilderness_racers_hero p {
+        font-size: 1.5em;
+      }
+
+      .cta-button {
+        background-color: #ff4081;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .wilderness_racers_game_description,
+      .wilderness_racers_key_features,
+      .wilderness_racers_visuals,
+      .wilderness_racers_trailer_section,
+      .wilderness_racers_call_to_action,
+      .wilderness_racers_community,
+      .wilderness_racers_footer {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+        text-align: center;
+      }
+
+      .description-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .section-image {
+        width: 50%;
+        height: auto;
+      }
+
+      .description-text {
+        padding: 20px;
+      }
+
+      .features-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .feature-block {
+        border: 2px solid #ff4081;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+      }
+
+      .feature-image {
+        width: 100%;
+        height: auto;
+      }
+
+      .wilderness_racers_key_features ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .gallery-image {
+        width: 300px;
+        margin: 10px;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .wilderness_racers_hero h1 {
+          font-size: 2em;
+        }
+
+        .wilderness_racers_hero p {
+          font-size: 1.2em;
+        }
+
+        .section-image {
+          width: 100%;
+        }
+
+        .features-container {
+          flex-direction: column; /* Stack features vertically on smaller screens */
+        }
+
+        .feature-block {
+          width: 90%; /* Adjust width for mobile */
+        }
+
+        .gallery-image {
+          width: 100%;
+        }
+        .wilderness_racers_menu ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 0;
+        }
+        .wilderness_racers_menu ul li{
+          margin: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .wilderness_racers_hero {
+          padding: 50px 0;
+        }
+
+        .wilderness_racers_hero h1 {
+          font-size: 1.5em;
+        }
+
+        .wilderness_racers_hero p {
+          font-size: 1em;
+        }
+
+        .description-container {
+          flex-direction: column;
+        }
+
+        .section-image {
+          width: 100%;
+        }
+      }
+
+      .wild32_timber_trail_section {
+        max-width: 1440px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 2px solid #ff4081;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .wild32_content {
+        padding: 20px;
+      }
+
+      .wild32_timber_trail_section h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+      }
+
+      .wild32_timber_trail_section p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin: 10px 0;
+      }
+
+      .wild32_game_image {
+        width: 100%;
+        max-width: 600px; /* Restricts image width on larger screens */
+        height: auto;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+
+      .wild32_cta_button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: #ff4081;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+      }
+
+      .wild32_cta_button:hover {
+        background-color: #e91e63; /* Darker shade on hover */
+      }
+
+      @media (max-width: 768px) {
+        .wild32_timber_trail_section h2 {
+          font-size: 1.5em;
+        }
+
+        .wild32_timber_trail_section p {
+          font-size: 1em;
+        }
+
+        .wild32_game_image {
+          max-width: 100%; /* Full width for mobile devices */
+        }
+      }
+
+
+      .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+      .slider {
+        position: relative;
+        max-width: 1230px;
+        height: 300px;
+        overflow: hidden;
+        margin: auto;
+        border: 2px solid #ff4081;
+        border-radius: 10px;
+      }
+
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide {
+        min-width: 100%;
+        height: 300px; /* Fixed height for slides */
+      }
+
+      .slide img {
+        width: 100%;
+        height: 100%; /* Make image fill the slide */
+        object-fit: cover; /* Maintain aspect ratio while covering the area */
+        border-radius: 10px;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+
+      @media (max-width: 600px) {
+        button {
+          padding: 5px;
+        }
+
+        .slider {
+          height: 200px; /* Adjust height for smaller screens */
+        }
+      }
+
+
+    </style>
+</head>
+<body>
+<header class="wilderness_racers_hero">
+    <nav class="wilderness_racers_menu">
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#description">Oyun Hakkında</a></li>
+            <li><a href="policy.html">Gizlilik Politikası</a></li>
+            <li><a href="terms.html">Şartlar ve koşullar</a></li>
+            <li><a href="#con">İletişim</a></li>
+
+        </ul>
+    </nav>
+    <h1>Wilderness Racers: Pin-Up Summit Showdown</h1>
+    <p>Doğanın Ruhunu Hissedin ve Hızla Yarışın!</p>
+    <a href="#" class="cta-button">Tanıtım Videosunu İzle</a>
+</header>
+
+<section id="description" class="wilderness_racers_game_description">
+    <h2>Oyun Hakkında</h2>
+    <div class="description-container">
+        <img src="img/2.jpg" alt="Wilderness Racers: Summit Showdown - Oyun Arka Planı" class="section-image">
+        <div class="description-text">
+            <p>Wilderness Racers: Summit Showdown, sizi adrenalin dolu bir maceraya davet ediyor! Bu oyun, pin-up
+                estetiğiyle süslenmiş karakterlerden oluşuyor ve hızlı hız, keskin virajlar ile dolu bir orman tecrübesi
+                sunuyor. Yüksek dağların arasında, rüzgarı hissederek, sürükleyici parkurlarda diğer yarışçılarla
+                kıyasıya bir mücadeleye hazır olun!</p>
+            <p>Oyun, sadece bir hız yarışı değil; aynı zamanda pin-up tarzınızla kişisel bir macera yaratma fırsatıdır.
+                Her karakterin eşsiz yeteneklerini kullanarak ormanın derinliklerinde yarışabileceksiniz. Pin-up
+                karakterleri, görsel estetiğin yanı sıra, oyuncuya sunduğu stratejik derinlik ile de dikkat çekiyor.</p>
+            <p>Wilderness Racers, rekabet dolu bir topluluk atmosferi sunarak, arkadaşlarınızla veya dünya genelinden
+                diğer oyuncularla yarışmanıza olanak tanır. Kazanmak için sürüş becerilerinizi, stratejinizi ve tabii ki
+                hızınızı kullanmalısınız!</p>
+        </div>
+    </div>
+</section>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="img/6.jpeg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="img/7.jpeg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="img/8.jpeg" alt="Image 3">
+        </div>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+
+<section id="features" class="wilderness_racers_key_features">
+    <h2>Öne Çıkan Özellikler</h2>
+    <div class="features-container">
+        <div class="feature-block">
+            <img src="img/3.jpg" alt="Tek Oyunculu Mod" class="feature-image">
+            <p><strong>Tek oyunculu ve çok oyunculu modlar:</strong> Hem bireysel olarak hem de arkadaşlarınızla
+                birlikte yarışın.</p>
+        </div>
+        <div class="feature-block">
+            <img src="img/4.jpg" alt="Çeşitli Karakterler" class="feature-image">
+            <p><strong>Çeşitli pin-up karakterleri:</strong> Her biri farklı yetenekler ve stiller sunar.</p>
+        </div>
+        <div class="feature-block">
+            <img src="img/5.jpeg" alt="Zorlu Parkurlar" class="feature-image">
+            <p><strong>Doğal ortamda zorlu parkurlar:</strong> Doğanın sunduğu çeşitli engellerle dolu parkurlar.</p>
+        </div>
+        <div class="feature-block">
+            <img src="img/6.jpeg" alt="Görsel Şölen" class="feature-image">
+            <p><strong>Görsel ve işitsel şölen:</strong> Yüksek kaliteli grafikler ve etkileyici ses efektleri.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="wild32_wilderness_racers" class="wild32_timber_trail_section">
+    <div class="wild32_content">
+        <h2>Wilderness Racers: Pin-Up Stiliyle Heyecan Dolu Yarışlar</h2>
+        <p>Wilderness Racers, doğa severler için tasarlanmış, heyecan verici ve rekabet dolu bir bilgisayar oyunudur. Bu
+            oyunda pin-up estetiği ile tasarlanmış özgün karakterler, keskin virajlar, zorlu parkurlar ve doğanın
+            sunduğu eşsiz manzaralar sizi bekliyor. Hız ve macera dolu bir yolculukta, ormanın derinliklerine dalmaya ve
+            rakiplerinizi geçmeye hazır olun!</p>
+        <img src="img/4.jpg" alt="Wilderness Racers Oyun" class="wild32_game_image">
+        <p>Yarış dünyasına adım attığınızda, doğanın sunduğu tüm güzellikleri keşfedeceksiniz. Zorlu arazi koşullarında
+            pin-up tarzındaki karakterlerinizle kaymanın ve yarışmanın keyfini çıkaracaksınız. Wilderness Racers'te her
+            yarış, farklı bir meydan okuma anlamına geliyor. Unutmayın, en iyi performans için strateji ve hızlı düşünme
+            yeteneği gereklidir.</p>
+        <p>Doğanın sunduğu güzellikler içinde, çeşitli engellerle dolu parkurlarda hızlı bir şekilde ilerlemeniz
+            gerekiyor. Pin-up karakterlerinizle birlikte diğer yarışçılara karşı zafer kazanmak için en iyi
+            stratejilerinizi kullanmalısınız. Her yarış, sadece bir hız yarışı değil, aynı zamanda doğa ile iç içe
+            geçireceğiniz bir macera!</p>
+        <a href="#" class="wild32_cta_button">Daha fazlasını öğrenin</a>
+    </div>
+</section>
+
+<section id="visuals" class="wilderness_racers_visuals">
+    <h2>Görseller</h2>
+    <img src="img/5.jpeg" alt="Wilderness Racers: Summit Showdown - Görseller" class="section-image">
+    <div class="image-gallery">
+        <img src="img/6.jpeg" alt="Wilderness Racers: Summit Showdown - Pin-Up Yarış" class="gallery-image">
+        <img src="img/7.jpeg" alt="Wilderness Racers: Summit Showdown - Zorlu Parkur" class="gallery-image">
+        <img src="img/8.jpeg" alt="Wilderness Racers: Summit Showdown - Pin-Up Karakterler" class="gallery-image">
+    </div>
+</section>
+
+
+<footer id="con" class="wilderness_racers_footer">
+    <h3>İletişim</h3>
+    <p>29 Mehdi Mehdizadeh Street, Baku 1054, Azerbaijan | +994559171137 | contact@pinupaz.wildracepin.click</p>
+    <p>Tüm hakları saklıdır © 2023 Wilderness Racers</p>
+</footer>
+
+<script>
+
+    let currentSlide = 0;
+
+    function changeSlide(direction) {
+        const slides = document.querySelectorAll('.slide');
+        currentSlide += direction;
+
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        } else if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+
+        const slidesContainer = document.querySelector('.slides');
+        const offset = -currentSlide * 100;
+        slidesContainer.style.transform = `translateX(${offset}%)`;
+    }
+
+
+</script>
+</body>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Wilderness Racers - Pin Up",
+        "url": "",
+        "logo": "/favicon/favicon.ico"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WPHeader",
+        "headline": "Wilderness Racers - Pin Up",
+        "description": "Wilderness Racers: Summit Showdown ile orman yarışlarının keyfini çıkarın. Pin-up tarzındaki karakterler ve zorlu parkurlar sizi bekliyor!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wilderness Racers - Pin Up",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/favicon/favicon.ico"
+            }
+        }
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Wilderness Racers - Pin Up",
+        "description": "Wilderness Racers: Summit Showdown ile orman yarışlarının keyfini çıkarın. Pin-up tarzındaki karakterler ve zorlu parkurlar sizi bekliyor!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wilderness Racers - Pin Up"
+        },
+        "license": "A license document that applies to this content, typically indicated by URL"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Main Navigation",
+        "url": "",
+        "hasPart": [
+            {
+                "@type": "WebPage",
+                "name": "Home",
+                "url": ""
+            },
+            {
+                "@type": "WebPage",
+                "name": "Policy",
+                "url": "/policy.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Terms of Conditions",
+                "url": "/terms.html"
+            }
+        ]
+    }
+</script>
+</html>

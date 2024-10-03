@@ -1,0 +1,7 @@
+User-Agent: *
+
+Disallow:
+
+
+Sitemap: http://pinupaz.wildracepin.click/sitemap.xml
+Host: pinupaz.wildracepin.click
